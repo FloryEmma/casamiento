@@ -1,0 +1,546 @@
+@font-face {
+    font-family: 'Bacalisties';
+    src: url('https://davidarpone.github.io/fuentes/Bacalisties.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'New York';
+    src: url('https://davidarpone.github.io/fuentes/NewYork.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Baskerville Old Face';
+    src: url('https://davidarpone.github.io/fuentes/baskerville-old-face.ttf') format('truetype');
+}
+
+
+body{
+
+    background-color: white;
+    margin: 0%;
+
+}
+
+.page{
+
+    width: 100vw;
+    height: 100vh;
+    
+    
+
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    
+
+    scrollbar-width: none;
+    
+}
+
+
+/*Webkit(Android browser, Safari y otros webkit)*/
+section::-webkit-scrollbar {
+    width: 0;
+}
+
+.contenedor{
+
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: center;
+
+}
+
+.contenedor {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Activación del fade cuando aparece en pantalla */
+.contenedor.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.titulo{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    align-items: center;
+    background-image: url('https://davidarpone.github.io/fuentes/Hojitas.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+
+}
+
+.primer_Renglon{
+
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nombres{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Primer_Renglon_Titulo{
+
+    display: flex;
+    align-items: center;
+    margin: 150px 0px 0px 0px;
+
+}
+
+.Primer_Flor{
+
+    font-family: 'New York', calibri;
+    font-size: 80px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.Primer_Amp{
+
+    font-family: 'Baskerville Old Face';
+    font-size: 50px;
+    margin: 0px 0px 0px 20px;
+
+}
+
+.Segundo_Renglon_Titulo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Primer_Emma{
+
+    font-family: 'New York';
+    letter-spacing: 0.1em;
+    font-size: 80px;
+    margin: 0px;
+
+}
+
+.Tercer_Renglon_Titulo{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.subtitulo{
+
+    font-family: 'Bacalisties';
+    font-size: 60px;
+    margin: 0px;
+
+}
+
+
+.versiculo{
+
+    display: flex;
+    
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.vss {
+
+    margin: 0px;
+    letter-spacing: 0.2em;
+    font-size: 14px;
+    font-family: 'New York';
+    text-shadow: 0px 0px black;
+}
+
+
+.info{
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('https://davidarpone.github.io/fuentes/Barra.png');
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: contain;
+
+}
+
+.info_subImg{
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url('https://davidarpone.github.io/fuentes/HojasLaterales.png');
+    background-repeat: no-repeat;
+    background-position-x: 105%;
+    background-position-y: 80%;
+
+
+}
+
+.fa-solid fa-church{
+
+    font-size: x-large;
+
+}
+
+.info_fecha{
+
+    margin: 50px 0px 0px 0px;
+
+}
+
+.fecha{
+
+    font-family: 'New York';
+    font-size: 50px;
+    margin: 0px;
+
+}
+
+.info_lugar{
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'New York';
+
+}
+
+.info_ceremonia{
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.numeros{
+
+    display: inline;
+    margin: 0px;
+    text-shadow: 0px 0px black ;
+
+}
+
+.ceremonia{margin: 0px; font-family: 'Bacalisties'; font-size: 40px;}
+.ivs{margin: 0px;}
+.dir_ivs{margin: 0px; display: flex; justify-content: center;}
+.hs_ivs{margin: 0px;}
+
+.info_fiesta{
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fiesta{margin: 0px; font-family: 'Bacalisties'; font-size: 40px;}
+.andmulti{margin: 0px;}
+.dir_andmulti{margin: 0px; display: flex; justify-content: center;}
+.hs_andmulti{margin: 0px;}
+
+
+.link{
+
+    color: gray;
+    text-decoration:none
+    
+}
+
+.link:hover{
+
+    color: black;
+}
+
+.fin{
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('https://davidarpone.github.io/fuentes/BarraLateral.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 112%;
+    background-size: contain;
+    
+}
+
+.logo{
+    width: 5%;
+    margin: 50px 0px 0px 0px;
+    align-self: center;
+}
+.tarjeta{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 0px 0px;
+    font-family: 'New York';
+    font-size: 16px;
+    text-align: justify; 
+    letter-spacing: 0.2em;
+
+}
+
+.confirmacion{margin: 0px; font-size: 24px;}
+
+.horizontal{
+    
+    align-self: center;
+    width: 8vw;
+    margin: 20px 0px 20px 0px;
+
+
+}
+
+
+.horizontal_info{
+
+    display: none;
+
+}
+
+@media (max-width: 800px) {
+    
+    .contenedor{
+
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: center;
+    
+    }
+    
+    .titulo{
+    
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;    
+        align-items: center;
+    
+    }
+    
+    .primer_Renglon{
+
+        margin: 40px 0px 0px 0px;
+        display: block;
+    
+    }
+    
+    .Primer_Flor{
+    
+        font-family: 'New York', calibri;
+        justify-content: center;
+        font-size: 80px;
+        margin: 0px 0px 0px 0px;
+    
+    }
+    
+    .Primer_Amp{
+    
+        font-family: 'Baskerville Old Face';
+        font-size: 50px;
+        margin: 0px 0px 0px 20px;
+    
+    }
+    
+    .Segundo_Renglon_Titulo{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .Primer_Emma{
+    
+        font-family: 'New York';
+        font-size: 80px;
+        margin: 0px;
+    
+    }
+        
+    .subtitulo{
+    
+        font-family: 'Bacalisties';
+        font-size: 40px;
+        margin: 0px 0px 5vh 0px;
+    
+    }
+    
+    .vss {
+    
+        margin: 0.5vw;
+        letter-spacing: 0.2em;
+        font-size: 14px;
+        text-align: justify;
+        font-family: 'New York';
+    }
+
+    .info{
+
+        width: 100vw;
+        height: 100vh;
+    
+    }
+    .info_subImg{
+
+        width: 100vw;
+        height: 100vh;
+    
+    }
+    
+    .info_fecha{
+    
+        margin: 50px 0px 0px 0px;
+    
+    }
+    
+    .fecha{
+    
+        font-family: 'New York';
+        font-size: 50px;
+        margin: 0px;
+    
+    }
+    
+    .info_lugar{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 80px 0px 0px 0px;
+    
+    }
+    
+    .info_ceremonia{
+    
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+    
+    }
+
+    .horizontal_info{
+        
+        display: block;
+        align-self: center;
+        width: 22vw;
+        margin: 5vh 0px 5vh 0px;
+    
+    }
+    
+    .ceremonia{margin: 0px;}
+    .ivs{margin: 0px;}
+    .dir_ivs{margin: 0px;}
+    .hs_ivs{margin: 0px;}
+    
+
+    .info_fiesta{
+    
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .fiesta{margin: 0px;}
+    .andmulti{margin: 0px;}
+    .dir_andmulti{margin: 0px;}
+    .hs_andmulti{margin: 0px;}
+    
+    
+    .link{
+    
+        color: gray;
+    }
+    
+    .link:hover{
+    
+        color: black;
+    }
+
+
+    .fin{
+
+        width: 100vw;
+        height: 100vh;
+
+        background-position-y: 100%;
+         
+    }
+    
+    .logo{
+        
+        width: 100px;
+        margin: 60px 0px 0px 40%;
+        align-self: self-start;
+
+    }
+    .tarjeta{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0px 0px 0px;
+        font-family: 'New York';
+        font-size: 16px; 
+        color: gray; 
+        text-align: justify; 
+        letter-spacing: 0.2em;
+    
+    }
+    
+    .confirmacion{margin: 0px; color: black; font-size: 24px;}
+    .horizontal{
+        
+        align-self: center;
+        width: 22vw;
+        margin: 30px 0px 30px 0px;
+    
+    
+    }
+    .alias{margin: 0px; color: black;}
+    .text_comprobante{margin: 30px 0px 0px 0px; color: black;}
+    .comprobante{margin: 0px;color: black;}
+    
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b8e60f92a5.js" crossorigin="anonymous"></script>
+    <title>Flor y Emma</title>
+    <link rel="shortcut icon" href="https://davidarpone.github.io/fuentes/love.ico">
+    
+</head>
+<body>
+    
+    <section class = 'page'>
+
+        <section class = 'contenedor' id="tapa">
+            <section class = 'titulo' >
+                
+                <section class = 'primer_Renglon'>
+
+                    <section class = 'nombres'>
+                        <section class = 'Primer_Renglon_Titulo'>
+                            <p class = 'Primer_Flor'>FLOR</p>
+                            <p class = 'Primer_Amp'>&</p>
+                        </section>
+                
+                        <section class = 'Segundo_Renglon_Titulo'>
+                            <p class = 'Primer_Emma'>EMMA</p>
+                        </section>
+        
+                        <section class = "Tercer_Renglon_Titulo">
+                            <p class = 'subtitulo'>nuestra boda</p>
+                        </section>
+            
+                    </section>
+            
+                    <section class = 'versiculo'>
+            
+                        <p class = 'vss'>"LAS MUCHAS AGUAS</p>
+                        <p class = 'vss'>NO PODRÁN APAGAR EL AMOR,</p>
+                        <p class = 'vss'>NI LO AHOGARÁN LOS RÍOS"</p>
+                        <p class = 'vss'>Cantares 8:7</p>
+            
+                    </section>
+
+                </section>
+                
+            </section>
+            
+        </section>
+
+        <section class = 'contenedor' id="info"> 
+            
+            <section class = 'info'>
+
+                <section class = 'info_subImg'>
+
+                    <section class = 'info_fecha'>
+
+                        <p class = 'fecha' >25 . 10 . 25</p>
+    
+                    </section>
+    
+                    <section class = 'info_lugar'>
+    
+                        <section class = 'info_ceremonia'>
+                            
+                            <p class = 'ceremonia'>Ceremonia</p>
+                            <p class = 'ivs'>"IGELSIA VIDA SOBRENATURAL"</p>
+                            <section class = 'dir_ivs'>Calle&nbsp;<p class='numeros'>23 1665, e/66 y 67</p>&nbsp;(La Plata)&nbsp;</section>
+                            <a href="https://maps.app.goo.gl/qKhLEodsdgdXGdPW6" class = 'link'><i class="fa-solid fa-church"></i>&nbsp;Google Maps</a></i>
+                            <p class = 'hs_ivs'>18:00 hs</p>
+                            
+    
+                        </section>
+                        <hr class='horizontal_info'>
+                        <section class = 'info_fiesta'>
+    
+                            <p class = 'fiesta'>Fiesta</p>
+                            <p class = 'andmulti'>"EL ANDEN MULTIESPACIO"</p>
+                            <section class = 'dir_andmulti'>Calle&nbsp;<p class = 'numeros'>203, e/41 y 42</p>&nbsp;(Lisandro Olmos)&nbsp;</section>
+                            <a href="https://maps.app.goo.gl/TQfFEgFWpqkSyxe86" class = 'link'><i class="fa-solid fa-champagne-glasses"></i>&nbsp;Google Maps</a>
+                            <p class = 'hs_andmulti'>21:00 hs</p>
+    
+                        </section>
+
+                    </section>
+
+                </section>
+
+                
+
+            </section>
+        
+        </section>
+
+        <section class = 'contenedor' id="fin"> 
+            
+            <search class = 'fin'>
+
+                <img src="https://davidarpone.github.io/fuentes/Logo.png" class = 'logo'>
+
+                <section class = 'tarjeta'>
+                    <p class = 'confirmacion'>CONFIRMAR ASISTENCIA</p>
+                    <p class = 'confirmacion'>AL&nbsp;<a href="https://wa.me/2216750117" class = 'link'><i class="fa-brands fa-whatsapp"></i>(221)675-0117</a>
+                    <hr class ='horizontal' >
+                    <p class = 'alias'>¡LOS ESPERAMOS!</p>
+
+                </section>
+
+            </search>
+        
+        </section>
+
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const containers = document.querySelectorAll(".contenedor");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    } else {
+                        entry.target.classList.remove("visible"); // Si quieres que se mantenga visible, elimina esta línea.
+                    }
+                });
+            }, {
+                threshold: 0.3 // Se activa cuando al menos el 30% del elemento está visible
+            });
+
+            containers.forEach((container) => observer.observe(container));
+        });
+    </script>
+
+</body>
+</html>
