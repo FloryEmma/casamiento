@@ -485,7 +485,7 @@ section::-webkit-scrollbar {
     .fiesta{margin: 0px;}
     .andmulti{margin: 0px;}
     .dir_andmulti{margin: 0px;}
-    .numeros{ font-family: 'Baskerville Old Face';}
+    .numeros{align-self: center; font-size: 17px; font-family: 'Baskerville Old Face';}
     .hs_andmulti{margin: 0px;}
     
     
